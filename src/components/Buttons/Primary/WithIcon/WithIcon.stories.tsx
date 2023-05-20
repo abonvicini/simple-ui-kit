@@ -1,15 +1,17 @@
 import React from "react";
-import Primary, { PrimaryProps } from "./Primary";
+import WithIcon, { WithIconProps } from "./WithIcon";
+
 
 export default {
-    title: 'Buttons/Primary',
-    component: Primary
+    title: 'Buttons/Primary/WithIcon',
+    component: WithIcon
 };
 
-export const Small = (args: PrimaryProps) => <Primary {...args} />;
+export const Small = (args: WithIconProps) => <WithIcon {...args} />;
 
 Small.args = {
-    text: 'My Button',
+    iconRight: false,
+    text: 'Button',
     isRounded: false,
     isActive: false,
     disabled: false,
@@ -18,6 +20,7 @@ Small.args = {
 }
 
 Small.argTypes = {
+    iconRight: { control: "boolean" },
     text: {control: 'text'},
     isRounded: { control: "boolean" },
     isActive: { control: "boolean" },
@@ -25,10 +28,11 @@ Small.argTypes = {
     size: { control: { type: "radio" }, options: ["large", "medium", "small"] },
 }
 
-export const Medium = (args: PrimaryProps) => <Primary {...args} />;
+export const Medium = (args: WithIconProps) => <WithIcon {...args} />;
 
 Medium.args = {
-    text: 'My Button',
+    iconRight: false,
+    text: 'Button',
     isRounded: false,
     isActive: false,
     disabled: false,
@@ -37,6 +41,7 @@ Medium.args = {
 }
 
 Medium.argTypes = {
+    iconRight: { control: "boolean" },
     text: {control: 'text'},
     isRounded: { control: "boolean" },
     isActive: { control: "boolean" },
@@ -44,10 +49,11 @@ Medium.argTypes = {
     size: { control: { type: "radio" }, options: ["large", "medium", "small"] },
 }
 
-export const Large = (args: PrimaryProps) => <Primary {...args} />;
+export const Large = (args: WithIconProps) => <WithIcon {...args} />;
 
 Large.args = {
-    text: 'My Button',
+    iconRight: false,
+    text: 'Button',
     isRounded: false,
     isActive: false,
     disabled: false,
@@ -56,6 +62,7 @@ Large.args = {
 }
 
 Large.argTypes = {
+    iconRight: { control: "boolean" },
     text: {control: 'text'},
     isRounded: { control: "boolean" },
     isActive: { control: "boolean" },

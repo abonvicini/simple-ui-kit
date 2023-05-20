@@ -1,20 +1,21 @@
 import React from "react";
-import Secondary, { SecondaryProps } from "./Secondary";
+import NoIcon, { NoIconProps } from "./NoIcon";
+
 
 export default {
-    title: 'Buttons/Secondary',
-    component: Secondary
+    title: 'Buttons/Primary/NoIcon',
+    component: NoIcon
 };
 
-export const Small = (args: SecondaryProps) => <Secondary {...args} />;
+export const Small = (args: NoIconProps) => <NoIcon {...args} />;
 
 Small.args = {
-    text: 'My Button',
+    text: 'Button',
     isRounded: false,
     isActive: false,
     disabled: false,
     size: 'small',
-    onClick: () => alert('My super click')
+    onClick: () => alert('My super click'),
 }
 
 Small.argTypes = {
@@ -25,10 +26,10 @@ Small.argTypes = {
     size: { control: { type: "radio" }, options: ["large", "medium", "small"] },
 }
 
-export const Medium = (args: SecondaryProps) => <Secondary {...args} />;
+export const Medium = (args: NoIconProps) => <NoIcon {...args} />;
 
 Medium.args = {
-    text: 'My Button',
+    text: 'Button',
     isRounded: false,
     isActive: false,
     disabled: false,
@@ -44,10 +45,10 @@ Medium.argTypes = {
     size: { control: { type: "radio" }, options: ["large", "medium", "small"] },
 }
 
-export const Large = (args: SecondaryProps) => <Secondary {...args} />;
+export const Large = (args: NoIconProps) => <NoIcon {...args} />;
 
 Large.args = {
-    text: 'My Button',
+    text: 'Button',
     isRounded: false,
     isActive: false,
     disabled: false,

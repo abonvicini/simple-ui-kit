@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import BaseButton from "@components/Buttons/BaseButton";
 import styles from "./Primary.styles";
 
 export type PrimaryProps = {
-    text: string;
+    children: ReactNode
     onClick: Function;
     disabled?: boolean;
     tabIndex?: number;
@@ -32,7 +32,7 @@ const Primary = (props: PrimaryProps) => {
             isRounded={props.isRounded}
             size={props.size ? props.size : 'medium'}
         >
-            {props.text}
+            {props.children}
         </BaseButton>
     );
 };
