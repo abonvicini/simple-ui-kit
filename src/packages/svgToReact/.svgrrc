@@ -1,0 +1,7 @@
+runtimeConfig: true
+expandProps: true
+typescript: true
+jsxRuntime: 'classic' 
+index: true
+outDir: './'
+ignoreExisting: false

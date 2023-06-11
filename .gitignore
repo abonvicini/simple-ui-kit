@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# svgToReact
+/src/packages/svgToReact/icons*
+/src/packages/svgToReact/node_modules
+/src/packages/svgToReact/.env

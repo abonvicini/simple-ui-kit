@@ -11,7 +11,6 @@ export type PrimaryProps = {
     isActive?: boolean;
     isRounded?: boolean;
     size?: "small" | "medium" | "large";
-
 };
 
 const Primary = (props: PrimaryProps) => {

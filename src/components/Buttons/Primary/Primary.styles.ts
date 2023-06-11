@@ -18,9 +18,7 @@ const styles = {
         background: "#1759C4",
     }),
 
- 
-
-    
+   
 };
 
 export default styles;

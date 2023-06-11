@@ -21,6 +21,7 @@ const NoIcon = (props: NoIconProps) => {
             ariaLabel={props.ariaLabel}
             isRounded={props.isRounded}
             size={props.size}
+            isActive={props.isActive}
         >
             {props.text} {/* TODO: Hacer componentes de textos */}
         </Primary>

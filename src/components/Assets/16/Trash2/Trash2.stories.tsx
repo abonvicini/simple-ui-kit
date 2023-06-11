@@ -1,0 +1,9 @@
+import React from "react";
+    import Trash2 from "./Trash2";
+    
+    export default {
+        title: 'Assets/16/Trash2',
+        component: Trash2
+    };
+    
+    export const Icon = () => <Trash2 />;

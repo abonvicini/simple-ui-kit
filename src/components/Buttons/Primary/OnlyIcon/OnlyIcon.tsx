@@ -1,5 +1,6 @@
 import React from "react";
 import Primary from "../Primary";
+import { Airplay } from "@components/Assets/24/Airplay";
 
 export type OnlyIconProps = {
     onClick: Function;
@@ -20,9 +21,10 @@ const OnlyIcon = (props: OnlyIconProps) => {
             ariaLabel={props.ariaLabel}
             isRounded={props.isRounded}
             size={props.size}
+            isActive={props.isActive}
         >
 
-            + {/* TODO: Hacer componente de iconos */}
+           <Airplay />
         </Primary>
     );
 };
