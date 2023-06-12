@@ -1,10 +1,8 @@
 import React from "react";
-import Primary from "../Primary";
+import Secondary from "../Secondary";
 
-import { assetEnum } from "@components/Assets/24/AssetOrchester/AssetOrchester";
-import { getAsset } from "@components/Buttons/utils/functions";
-
-export type OnlyIconProps = {
+export type NoIconProps = {
+    text: string;
     onClick: Function;
     disabled?: boolean;
     tabIndex?: number;
@@ -12,13 +10,11 @@ export type OnlyIconProps = {
     isActive?: boolean;
     isRounded?: boolean;
     size?: "small" | "medium" | "large";
-    icon: assetEnum;
 };
 
-const OnlyIcon = (props: OnlyIconProps) => {
-
+const NoIcon = (props: NoIconProps) => {
     return (
-        <Primary
+        <Secondary
             onClick={props.onClick}
             disabled={props.disabled}
             tabIndex={props.tabIndex}
@@ -27,9 +23,9 @@ const OnlyIcon = (props: OnlyIconProps) => {
             size={props.size}
             isActive={props.isActive}
         >
-            {getAsset(props)}
-        </Primary>
+            {props.text} {/* TODO: Hacer componentes de textos */}
+        </Secondary>
     );
 };
 
-export default OnlyIcon;
+export default NoIcon;

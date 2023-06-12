@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import BaseButton from "@components/Buttons/BaseButton";
 import styles from "./Secondary.styles";
 
 export type SecondaryProps = {
-    text: string;
+    children: ReactNode;
     onClick: Function;
     disabled?: boolean;
     tabIndex?: number;
@@ -11,7 +11,6 @@ export type SecondaryProps = {
     isActive?: boolean;
     isRounded?: boolean;
     size?: "small" | "medium" | "large";
-
 };
 
 const Secondary = (props: SecondaryProps) => {
@@ -30,9 +29,9 @@ const Secondary = (props: SecondaryProps) => {
             tabIndex={props.tabIndex}
             ariaLabel={props.ariaLabel}
             isRounded={props.isRounded}
-            size={props.size ? props.size : 'medium'}
+            size={props.size ? props.size : "medium"}
         >
-            {props.text}
+            {props.children}
         </BaseButton>
     );
 };

@@ -4,7 +4,7 @@ import { assetArray } from "@components/Assets/24/AssetOrchester/AssetOrchester"
 
 
 export default {
-    title: 'Buttons/Primary/WithIcon',
+    title: 'Buttons/Secondary/WithIcon',
     component: WithIcon
 };
 

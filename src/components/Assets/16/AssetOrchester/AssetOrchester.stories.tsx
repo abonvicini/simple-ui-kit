@@ -1,13 +1,13 @@
 import React from "react";
-import AssetOrchester, { assetArray, assetEnum } from "./AssetOrchester";
+import AssetOrchester16, { assetArray, assetEnum } from "./AssetOrchester";
 
 export default {
     title: "Assets/16/AssetOrchester",
-    component: AssetOrchester,
+    component: AssetOrchester16,
 };
 
 export const AssetOrchesterStories = (args: { asset: assetEnum }) => (
-    <AssetOrchester asset={args.asset} />
+    <AssetOrchester16 asset={args.asset} />
 );
 
 AssetOrchesterStories.argTypes = {

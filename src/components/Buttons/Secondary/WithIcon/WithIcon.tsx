@@ -1,5 +1,5 @@
 import React from "react";
-import Primary from "../Primary";
+import Secondary from "../Secondary";
 
 import { getAsset } from "@components/Buttons/utils/functions";
 import { assetEnum } from "@components/Assets/24/AssetOrchester/AssetOrchester";
@@ -21,7 +21,7 @@ export type WithIconProps = {
 
 const WithIcon = (props: WithIconProps) => {
     return (
-        <Primary
+        <Secondary
             onClick={props.onClick}
             disabled={props.disabled}
             tabIndex={props.tabIndex}
@@ -43,7 +43,7 @@ const WithIcon = (props: WithIconProps) => {
                 </>
             )}
             {/* TODO: Hacer componente de iconos y componente textos*/}
-        </Primary>
+        </Secondary>
     );
 };
 

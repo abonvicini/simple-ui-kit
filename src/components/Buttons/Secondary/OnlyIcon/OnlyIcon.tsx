@@ -1,5 +1,5 @@
 import React from "react";
-import Primary from "../Primary";
+import Secondary from "../Secondary";
 
 import { assetEnum } from "@components/Assets/24/AssetOrchester/AssetOrchester";
 import { getAsset } from "@components/Buttons/utils/functions";
@@ -18,7 +18,7 @@ export type OnlyIconProps = {
 const OnlyIcon = (props: OnlyIconProps) => {
 
     return (
-        <Primary
+        <Secondary
             onClick={props.onClick}
             disabled={props.disabled}
             tabIndex={props.tabIndex}
@@ -28,7 +28,7 @@ const OnlyIcon = (props: OnlyIconProps) => {
             isActive={props.isActive}
         >
             {getAsset(props)}
-        </Primary>
+        </Secondary>
     );
 };
 
