@@ -3,7 +3,7 @@ import BaseButton from "@components/Buttons/BaseButton";
 import styles from "./Primary.styles";
 
 export type PrimaryProps = {
-    children: ReactNode
+    children: ReactNode;
     onClick: Function;
     disabled?: boolean;
     tabIndex?: number;
@@ -11,6 +11,7 @@ export type PrimaryProps = {
     isActive?: boolean;
     isRounded?: boolean;
     size?: "small" | "medium" | "large";
+    style?: string;
 };
 
 const Primary = (props: PrimaryProps) => {
@@ -21,6 +22,14 @@ const Primary = (props: PrimaryProps) => {
         className = styles.primary;
     }
 
+    if (props.disabled) {
+        className = className + " " + styles.disabled;
+    }
+
+    if (props.style) {
+        className = className + " " + props.style;
+    }
+
     return (
         <BaseButton
             className={className}
@@ -29,7 +38,7 @@ const Primary = (props: PrimaryProps) => {
             tabIndex={props.tabIndex}
             ariaLabel={props.ariaLabel}
             isRounded={props.isRounded}
-            size={props.size ? props.size : 'medium'}
+            size={props.size ? props.size : "medium"}
         >
             {props.children}
         </BaseButton>

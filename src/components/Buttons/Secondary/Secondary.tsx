@@ -11,6 +11,7 @@ export type SecondaryProps = {
     isActive?: boolean;
     isRounded?: boolean;
     size?: "small" | "medium" | "large";
+    style?: string;
 };
 
 const Secondary = (props: SecondaryProps) => {
@@ -19,6 +20,14 @@ const Secondary = (props: SecondaryProps) => {
         className = styles.secondary + " " + styles.activeSecondary;
     } else {
         className = styles.secondary;
+    }
+
+    if(props.disabled) {
+        className = className + " " + styles.disabled
+    }
+
+    if (props.style) {
+        className = className + " " + props.style;
     }
 
     return (

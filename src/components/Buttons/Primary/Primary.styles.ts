@@ -18,6 +18,20 @@ const styles = {
         background: "#1759C4",
     }),
 
+    disabled: style({
+        background: "#E0E2E5",
+        color: "#565E69",
+        $nest: {
+            "&:hover": {
+                // para apagar el hover de primary
+                background: "#E0E2E5",
+            },
+            "&:active": {
+                background: "",
+            },
+        },
+    })
+
    
 };
 

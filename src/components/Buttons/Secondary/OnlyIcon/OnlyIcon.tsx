@@ -4,6 +4,8 @@ import Secondary from "../Secondary";
 import { assetEnum } from "@components/Assets/24/AssetOrchester/AssetOrchester";
 import { getAsset } from "@components/Buttons/utils/functions";
 
+import styles from "./OnlyIcon.styles";
+
 export type OnlyIconProps = {
     onClick: Function;
     disabled?: boolean;
@@ -26,6 +28,7 @@ const OnlyIcon = (props: OnlyIconProps) => {
             isRounded={props.isRounded}
             size={props.size}
             isActive={props.isActive}
+            style={props.size !== 'large' ? styles.paddingDefault : styles.paddingLarge}
         >
             {getAsset(props)}
         </Secondary>

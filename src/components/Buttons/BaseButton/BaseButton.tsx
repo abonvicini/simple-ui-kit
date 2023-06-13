@@ -10,7 +10,7 @@ export type BaseButtonProps = {
   tabIndex?: number;
   ariaLabel?: string;
   disabled?: boolean;
-  size: 'small' | 'medium'| 'large'
+  size: 'small' | 'medium'| 'large';
 }
 
 const BaseButton = (props: BaseButtonProps) => {
