@@ -23,6 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # svgToReact
-/src/packages/svgToReact/icons*
-/src/packages/svgToReact/node_modules
-/src/packages/svgToReact/.env
+/packages/svgToReact/icons*
+/packages/svgToReact/node_modules
+/packages/svgToReact/.env
+/packages/svgToReact/package-lock.json
